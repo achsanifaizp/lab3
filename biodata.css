@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    overflow-y: auto;
+}
+body {
+    background-image: url('images/2.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #dea90a;  
+    color: #fcfbfe; 
+    padding: 20px;
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.navbar {
+    font-family: 'Arial', sans-serif;
+    background-color: #dea90a; 
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    align-items: center; 
+    display: flex; 
+}
+
+.logo {
+    background-image: url('images/logo.png'); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    width: 40px;
+    height: 40px; 
+    margin-left: 40px; 
+}
+
+.menu ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    margin-right: 40px; 
+}
+
+.menu ul li {
+    display: inline; 
+    margin-right: 15px; 
+}
+
+ul li a {
+    text-decoration: none; 
+    color: #fcfbfe; 
+    font-weight: bold; 
+    transition: .4s ease-in-out; 
+}
+
+ul li a:hover {
+    color: #e29f3e; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333333;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: 150px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 10px;
+}
+
+/* Style for the table cells with data */
+td:nth-child(2) {
+    /* Select the second column (data column) */
+    text-align: left;
+}
+
+/* Style for the table rows with data */
+tr:nth-child(even) {
+    /* Select even-numbered rows */
+    background-color: #f9f9f9;
+}

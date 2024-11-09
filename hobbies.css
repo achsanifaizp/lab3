@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    overflow-y: auto;
+}
+body {
+    background-image: url('images/2.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #dea90a;  
+    color: #fcfbfe; 
+    padding: 20px;
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.navbar {
+    font-family: 'Arial', sans-serif;
+    background-color: #dea90a; 
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    align-items: center; 
+    display: flex; 
+}
+
+.logo {
+    background-image: url('images/logo.png'); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    width: 40px;
+    height: 40px; 
+    margin-left: 40px; 
+}
+
+.menu ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    margin-right: 40px; 
+}
+
+.menu ul li {
+    display: inline; 
+    margin-right: 15px; 
+}
+
+ul li a {
+    text-decoration: none; 
+    color: #fcfbfe; 
+    font-weight: bold; 
+    transition: .4s ease-in-out; 
+}
+
+ul li a:hover {
+    color: #e29f3e; 
+}
+
+.content {
+    text-align: center; 
+}
+
+.content {
+    color: #5A3E36;
+    min-height: calc(100%-60px);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.content p {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.1);
+}
+
+.caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 1;
+    transition: opacity 0.5s;
+}

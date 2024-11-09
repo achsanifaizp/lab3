@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    overflow-y: auto;
+}
+body {
+    background-image: url('images/2.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
+}
+
+footer {
+    background-color: #dea90a;  
+    color: #fcfbfe; 
+    padding: 20px;
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.navbar {
+    font-family: 'Arial', sans-serif;
+    background-color: #dea90a; 
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    align-items: center; 
+    display: flex; 
+}
+
+.logo {
+    background-image: url('images/logo.png'); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    width: 40px;
+    height: 40px; 
+    margin-left: 40px; 
+}
+
+.menu ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    margin-right: 40px; 
+}
+
+.menu ul li {
+    display: inline; 
+    margin-right: 15px; 
+}
+
+ul li a {
+    text-decoration: none; 
+    color: #fcfbfe; 
+    font-weight: bold; 
+    transition: .4s ease-in-out; 
+}
+
+ul li a:hover {
+    color: #e29f3e; 
+}
+
+.intro {
+    margin: auto; 
+    display: flex; 
+    height: 200vh; 
+    flex-grow: 1; 
+    align-items: center; 
+}
+
+.content {
+    text-align: center; 
+}
+
+.content h1 {
+    font-family: sans-serif; 
+    color: #f1ba6b; 
+    padding: 2rem; 
+    font-size: 130px; 
+    font-weight: 600;
+    transition: 0.5s; 
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 2px #fdc997; 
+    color: transparent; 
+}
+
+@media (max-width: 1100px) {
+    .content h1 {
+        font-size: 90px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 60px; 
+    }
+}
+
+.qoute {
+    margin-top: 1rem; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400; 
+    color: #f1d9b8; 
+    font-size: 20px; 
+}
+
+.btn {
+    width: 150px; 
+    height: 40px; 
+    background: #e29f3e; 
+    border: none; 
+    margin-top: 30px; 
+    font-size: 18px; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    color: #5c2906; 
+    font-weight: 500; 
+    transition: 0.4s ease; 
+}
+
+.btn:hover {
+    background: #fffffe; 
+}
+
